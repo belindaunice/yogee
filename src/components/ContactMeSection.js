@@ -25,11 +25,11 @@ const LandingSection = () => {
     initialValues: {
       firstName: "",
       email: "",
-      type: 'hireMe',
+      type: 'inquiry',
       comment: ""
     },
     onSubmit: (values) => {
-      submit('https://pete.com/contactme', values)
+      submit('https://facebook.com/', values)
     },
     validationSchema: Yup.object({
       firstName: Yup.string()
@@ -52,13 +52,13 @@ const LandingSection = () => {
   return (
     <FullScreenSection
       isDarkBackground
-      backgroundColor="#512DA8"
+      backgroundColor="#A6564F"
       py={16}
       spacing={8}
     >
       <VStack w="1024px" p={32} alignItems="flex-start">
         <Heading as="h1" id="contactme-section">
-          Contact me
+          Request a Consultation
         </Heading>
         <Box p={6} rounded="md" w="100%">
           <form onSubmit={formik.handleSubmit}>
@@ -88,11 +88,11 @@ const LandingSection = () => {
                 {...formik.getFieldProps("type")}
                 >
 
-                  <option value="hireMe">Freelance project proposal</option>
-                  <option value="openSource">
-                    Open source consultancy session
+                  <option value="custom">Custom Meditation</option>
+                  <option value="reiki">
+                    Reiki Session
                   </option>
-                  <option value="other">Other</option>
+                  <option value="other">Other Inquiry</option>
                 </Select>
               </FormControl>
               <FormControl isInvalid={!!formik.errors.comment && formik.touched.comment}>
@@ -105,7 +105,7 @@ const LandingSection = () => {
                 />
                 <FormErrorMessage>{formik.errors.comment}</FormErrorMessage>
               </FormControl>
-              <Button type="submit" colorScheme="purple" width="full">
+              <Button type="submit" colorScheme="whiteAlpha" width="full">
                 Submit
               </Button>
             </VStack>

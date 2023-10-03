@@ -7,25 +7,25 @@ const projects = [
   {
     title: "Heart Opening Meditation",
     description:
-      "Handy tool belt to create amazing AR components in a React app, with redux integration via middleware️",
+      "A guided meditation aimed at opening the heart chakra, fostering love and compassion within, and promoting emotional balance and connection with others.",
     getImageSrc: () => require("../images/photo1.jpg"),
   },
   {
     title: "Opening to the Flow Meditation",
     description:
-      "A scrollable bottom sheet with virtualisation support, native animations at 60 FPS and fully implemented in JS land 🔥️",
+      "A beginner-friendly meditation session that provides step-by-step guidance and techniques to help individuals learn the art of meditation and cultivate mindfulness.",
     getImageSrc: () => require("../images/photo2.jpg"),
   },
   {
     title: "Relaxing into Sleep Meditation",
     description:
-      "A One-stop shop for photographers to share and monetize their photos, allowing them to have a second source of income",
+      "A soothing meditation designed to calm the mind, release tension, and promote restful sleep by guiding you into a state of deep relaxation.",
     getImageSrc: () => require("../images/photo3.jpg"),
   },
   {
     title: "Be Here Now Meditation",
     description:
-      "A mobile application for leisure seekers to discover unique events and activities in their city with a few taps",
+      "A meditation practice focused on cultivating heightened awareness and mindfulness through stillness and inner tranquility.",
     getImageSrc: () => require("../images/photo4.jpg"),
   },
 ];

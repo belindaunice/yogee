@@ -1,37 +1,8 @@
 import React, { useEffect, useRef } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import {
-  faGithub,
-  faLinkedin,
-  faMedium,
-  faStackOverflow,
-} from "@fortawesome/free-brands-svg-icons";
 import { Image, Box, HStack } from "@chakra-ui/react";
 import Services from "./Services";
 
-const socials = [
-  {
-    icon: faEnvelope,
-    url: "mailto: hello@example.com",
-  },
-  {
-    icon: faGithub,
-    url: "https://github.com",
-  },
-  {
-    icon: faLinkedin,
-    url: "https://www.linkedin.com",
-  },
-  {
-    icon: faMedium,
-    url: "https://medium.com",
-  },
-  {
-    icon: faStackOverflow,
-    url: "https://stackoverflow.com",
-  },
-];
+
 
 const Header = () => {
  
@@ -60,7 +31,7 @@ const Header = () => {
       transitionTimingFunction="ease-in-out"
       backgroundColor="#F3C7A2"
     >
-      <Box color="white" maxWidth="1280px" margin="0 auto">
+      <Box color="brown" maxWidth="1280px" margin="0 auto">
         <HStack
           px={16}
           py={4}
@@ -69,16 +40,16 @@ const Header = () => {
         >
           <nav>
             {}
-            <HStack spacing={4}>
-              <Image src="https://i.ibb.co/vvgdzNc/yogee-logo.png" height="100px"/>
+            <HStack spacing={8}>
+              <Image src="https://i.ibb.co/vvgdzNc/yogee-logo.png" min-height="100px" width="200px"/>
 
             </HStack>
           </nav>
           <nav>
             <HStack spacing={8}>
 
-             
-              <a href="#services" onClick={handleClick("projects")}>Guided Meditations</a>
+              <a href="#services" onClick={handleClick("services")}>Guided Meditations</a>
+              <a href="#getstarted" onClick={handleClick("getstarted")}>Get Started</a>
               <a href="#contactme-section" onClick={handleClick("contactme")}>Schedule a Consultation</a>
 
             </HStack>
